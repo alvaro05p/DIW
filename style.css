@@ -1,0 +1,94 @@
+/* General settings for dark mode */
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la cabecera */
+.header {
+    background-color: #1f1f1f; /* Fondo ligeramente más claro para destacar la cabecera */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333; /* Línea sutil en la parte inferior de la cabecera */
+}
+
+.header h1 {
+    color: #e0e0e0; /* Color del texto de la cabecera */
+    margin: 0;
+    font-size: 28px;
+}
+
+.header ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.header ul li {
+    font-size: 18px;
+    color: #b0b0b0; /* Color gris claro para los elementos del menú */
+    cursor: pointer; /* Añade un cursor de mano en hover */
+}
+
+.header ul li:hover {
+    color: #ffffff; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Estilo para el subtítulo */
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    color: #ffffff; /* Texto en blanco */
+}
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+    position: relative;
+    display: inline-block; /* Permite que la imagen y el overlay se ajusten al tamaño de la imagen */
+    
+}
+
+/* Estilo para la imagen */
+.image-container img {
+    display: block;
+    max-width: 100%; /* Para hacer la imagen responsiva */
+    height: auto;
+    transition: opacity 0.3s ease; /* Transición suave para el efecto de oscurecimiento */
+}
+
+/* Estilo para el overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Transición suave para el efecto de aparición */
+}
+
+/* Estilo para el texto en el overlay */
+.overlay .text {
+    color: #ffffff; /* Texto en blanco */
+    font-size: 24px;
+}
+
+/* Efecto hover: oscurece la imagen y muestra el overlay */
+.image-container:hover img {
+    opacity: 0.7; /* Imagen se oscurece al pasar el ratón por encima */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Muestra el overlay al pasar el ratón por encima */
+}
