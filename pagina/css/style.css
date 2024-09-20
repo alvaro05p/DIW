@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(47, 47, 47);
     color: white;
     margin: 0;
@@ -7,7 +7,7 @@ body{
     font-style: normal;
 }
 
-.header{
+.header {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -17,42 +17,48 @@ body{
     padding: 10px;
 }
 
-@media (min-width: 1200px){
-    .header{
+@media (min-width: 1200px) {
+    .header {
         background-color: black;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-items: center;
         padding: 10px;
     }
 }
 
-.header img{
+.header img {
     max-height: 40px;
     background-color: white;
     border-radius: 30px;
     padding: 5px;
-    
 }
 
-.header ul{
+.header ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header li{
+.header li {
     list-style: none;
     padding: 10px;
 }
 
-.header a{
+.header a {
     text-decoration: none;
     color: white;
+    padding: 6px;
 }
 
-.main{
+.header a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,39 +68,61 @@ body{
     margin-bottom: 7.5%;
 }
 
-.main h3{
+.main h2 {
     margin-bottom: 5%;
     background-color: black;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 15px;
 }
 
-.main_images{
+.main_images {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    gap: 30px;
 }
 
-@media (min-width: 1200px){
-    .main_images{
+.image-container {
+    position: relative; /* Necesario para que el overlay funcione correctamente */
+}
+
+.main_images img {
+    width: 400px;
+    height: 275px;
+    border-radius: 10px;
+    display: block; /* Asegura que la imagen no tenga espacios */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.5s ease; /* Transición suave */
+    text-align: center; /* Texto centrado */
+    border-radius: 10px; /* Para coincidir con las esquinas de la imagen */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Mostrar el texto al hacer hover */
+}
+
+@media (min-width: 1200px) {
+    .main_images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 }
 
-.main_images img{
-    width: 400px;
-    height: 275px;
-    padding: 5px;
-}
-
-.main_images img:hover{
-    opacity: 50%;
-    background-color: black;
-}
-
-.footer{
+.footer {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -104,32 +132,55 @@ body{
     padding: 10px;
 }
 
-@media (min-width: 1200px){
-
-    .footer{
+@media (min-width: 1200px) {
+    .footer {
         background-color: black;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
         padding: 20px;
         margin-top: 40px;
     }
-
 }
 
-.footer ul{
+.footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer li{
+.footer li {
     list-style: none;
     padding: 10px;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: white;
+    padding: 6px;
+}
+
+.footer a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nosotros-main p {
+    margin: 5% auto;
+    max-width: 800px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.nosotros-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 7.5%;
 }
