@@ -1,0 +1,49 @@
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.all{
+    background-color: gainsboro;
+    padding-inline: 20px;
+    width: 800px;
+    height: 800px;
+    display: grid;
+}
+
+.header h1{
+    margin-left: 40px;
+}
+
+.header ul{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.header li{
+    margin-right: 5px;
+    list-style: none;
+}
+
+.texto-noticia{
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 400px;
+}
+
+.derecha li{
+    list-style: none;
+}
+
+.lados{
+    display: flex;
+    gap: 40px;
+}
+
+.footer{
+    border-top: 1px solid gray;
+    text-align: center;
+    font-size: 25px;
+}
