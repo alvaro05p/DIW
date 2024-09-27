@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+}
+
+th{
+    background-image: url(img/fondo_gris.gif);
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFCC
+}
+
+.primera {
+    background-color: #E6F3FF;
+}
+
+tr:hover{
+    background-color: #FFFF66;
+}
