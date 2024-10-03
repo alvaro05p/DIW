@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    background-color: gray;
+}
+
+.botonera{
+    display: flex;
+    justify-content:space-around;
+    background-image: url(../imgs/red015.jpg);
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-image: url(../imgs/lgrey008.jpg);
+    padding: 10px;
+}
+
+.main p{
+    padding: 4px;
+    margin: 4px;
+    border-top: 1px solid black;
+}
+
+.apartado-main{
+    background-color: white;
+    margin-top: 14%;
+    margin-bottom: 14%;
+    padding: 3px;
+    margin: 10px;
+}
+
+.footer{
+    background-color: rgb(25, 26, 39);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
