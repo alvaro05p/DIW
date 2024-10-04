@@ -1,6 +1,20 @@
+.container{
+    background-image: url(../imgs/old_map.png);
+    padding: 15px;
+}
+
 .header{
     display: flex;
-    background-color: gray;
+    justify-content: left;
+    align-items: center;
+    background-color: #313B44;
+    padding: 10px;
+    border-bottom: 5px solid black;
+    color: white;
+}
+
+.header h1{
+    margin-left: 10px;
 }
 
 .botonera{
@@ -33,9 +47,10 @@
 }
 
 .footer{
-    background-color: rgb(25, 26, 39);
+    background-color: #313B44;
     color: white;
     text-align: center;
     padding: 20px;
+    border-top: 5px solid black;
 }
 
