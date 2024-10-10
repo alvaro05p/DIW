@@ -22,14 +22,17 @@
     justify-content:space-around;
     background-image: url(../imgs/red015.jpg);
     padding: 20px;
+    color: white;
 }
 
 .main{
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     text-align: center;
     background-image: url(../imgs/lgrey008.jpg);
     padding: 10px;
+    
 }
 
 .main p{
@@ -38,12 +41,25 @@
     border-top: 1px solid black;
 }
 
-.apartado-main{
+
+.apartado-main {
+    border: solid;
+    border-image: url('/imgs/movil.png');
+    border-width: 50px 10px 50px 10px;
+    border-image-slice: 50 10 50 10;
     background-color: white;
     margin-top: 14%;
     margin-bottom: 14%;
     padding: 3px;
     margin: 10px;
+    box-sizing: border-box; 
+    max-width: 30%;
+    flex: 1 1 30%; 
+    border-radius: 80px;
+}
+
+.apartado-main img{
+    width: 75%;
 }
 
 .footer{
