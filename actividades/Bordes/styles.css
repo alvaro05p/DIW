@@ -1,0 +1,76 @@
+
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.bloque {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filas {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.caja {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #686868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+}
+
+.caja1 {
+    border-radius: 25px 50px 15px 50px;
+}
+
+.caja2 {
+    border-radius: 5px;
+}
+
+.caja3 {
+    border-radius: 50px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), teal);
+}
+
+.caja4 {
+    border-radius: 50px;
+    background: radial-gradient(circle, rgb(252, 252, 252), teal);
+}
+
+.caja5 {
+    border-radius: 50px;
+}
+
+.caja6 {
+    border-radius: 5px;
+}
+
+.caja7,
+.caja8,
+.caja9,
+.caja10 {
+    width: 500px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+.caja7 {
+    box-shadow: 1px 10px 10px;
+}
+
+.caja9{
+    text-shadow: 2px 2px 4px black;
+}
+
+.caja10 {
+    background: linear-gradient(to right, rgb(255, 255, 255), teal);
+}
