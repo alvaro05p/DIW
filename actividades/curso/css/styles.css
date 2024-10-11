@@ -1,48 +1,54 @@
-.container{
-    background-image: url(../imgs/old_map.png);
-    padding: 15px;
+body{
+    background: linear-gradient(red, white);
+    background-repeat: no-repeat;
+    padding: 20px;
 }
 
-.header{
+#page{
+    border-radius: 60px;
+}
+
+header{
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: #313B44;
+    background: linear-gradient(to bottom,rgb(35, 108, 216), rgb(127, 207, 253));
     padding: 10px;
     border-bottom: 5px solid black;
     color: white;
 }
 
-.header h1{
+header h1{
     margin-left: 10px;
 }
 
-.botonera{
+nav{
     display: flex;
     justify-content:space-around;
-    background-image: url(../imgs/red015.jpg);
+    background: linear-gradient(to right, rgb(218, 155, 40), rgb(238, 216, 93));
+    
     padding: 20px;
     color: white;
 }
 
-.main{
+main{
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-image: url(../imgs/lgrey008.jpg);
+    background-color: white ;
     padding: 10px;
     
 }
 
-.main p{
+main p{
     padding: 4px;
     margin: 4px;
-    border-top: 1px solid black;
+    
 }
 
 
-.apartado-main {
+article {
     border: solid;
     border-image: url('/imgs/movil.png');
     border-width: 50px 10px 50px 10px;
@@ -58,12 +64,16 @@
     border-radius: 80px;
 }
 
-.apartado-main img{
+article img{
     width: 75%;
 }
 
-.footer{
-    background-color: #313B44;
+article h1{
+    letter-spacing: 7px;
+}
+
+footer{
+    background: linear-gradient(to top,rgb(35, 108, 216), rgb(68, 174, 235));
     color: white;
     text-align: center;
     padding: 20px;
