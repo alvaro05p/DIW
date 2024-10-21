@@ -130,5 +130,90 @@ nav a:hover {
 nav {
     font-family: Arial, sans-serif;
 }
+
+/* Estilos básicos del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+/* Estilo para el enlace principal "Vídeos" */
+.menu a {
+    display: block;
+    text-align: center;
+}
+
+/* Triángulo decorativo */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #FF8832; /* Color naranja del triángulo */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Solo aparece al hacer hover */
+}
+
+/* Estilo del submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 110%; /* Posiciona el submenú justo debajo del triángulo */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF8832; /* Color naranja */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    z-index: 2;
+}
+
+/* Elementos del submenú */
+.submenu li {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Enlaces dentro del submenú */
+.submenu a {
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Hover sobre enlaces del submenú */
+.submenu a:hover {
+    background-color: darkorange; /* Cambia el color en hover */
+}
+
+/* Mostrar el triángulo y submenú al hacer hover */
+.menu li:hover .submenu,
+.menu li:hover .triangle {
+    display: block;
+}
+
+/* Opcional: transición suave */
+.submenu, .triangle {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* Cambios de color en hover sobre el enlace principal */
+.menu a:hover {
+    color: #fff;
+}
+
  
 
