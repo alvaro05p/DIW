@@ -14,7 +14,12 @@ header {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    padding: 10px;
+    padding: 15px;
+}
+
+main{
+    width: 100%;
+    margin-right: 10%;
 }
 
 @media (min-width: 1200px) {
@@ -27,9 +32,17 @@ header {
         padding: 10px;
     }
 
+    header svg{
+        display: none;
+    }
+
     #search{
         max-width: 15%;
     }
+}
+
+header svg{
+    padding: 10px;
 }
 
 header img {
@@ -189,4 +202,44 @@ footer a:hover {
     border-radius: 10px;
     padding: 3px;
     max-width: 40%;
+}
+
+aside{
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    
+    #aside{
+        display: flex;
+    }
+
+    aside {
+        background-color: black; /* Match the header background */
+        padding: 10px;
+        display: block;
+        
+    }
+
+    aside ul {
+        list-style: none;
+        padding: 0; /* Remove default padding */
+    }
+
+    aside li {
+        padding: 10px;
+    }
+
+    aside a {
+        text-decoration: none;
+        color: white;
+        padding: 6px;
+    }
+
+    aside a:hover {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+    }
+
 }
