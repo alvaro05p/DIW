@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reproductor.css">
+</head>
+<body>
+    <div id="page">
+
+        <header>
+            <img src="imgs/logo.png" alt="Logo">
+            <h1>Curso de HTML5 y CSS3</h1>
+        </header>
+
+        <nav>
+            <div>
+                <img src="imgs/book.png" alt="Libro">
+                <a href="index.html"><h3>Contenidos</h3></a>
+            </div>
+            <ul class="menu">
+                <li class="desplegable">
+                    <img src="imgs/film.png" alt="Videos">
+                    <a href="videos.html">Vídeos</a>
+                    <div class="triangle"></div>
+                    <ul class="submenu">
+                        <li><a href="videos.html">Vídeos1</a></li>
+                        <li><a href="videos.html">Vídeos2</a></li>
+                        <li><a href="videos.html">Vídeos3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <img src="imgs/mail.png" alt="Correo">
+                <a href=""><h3>Email</h3></a>
+            </div>
+        </nav>
+
+        <main>
+            <div id="reproductor">
+                <video id="medio" width="720" height="400"> <source src="media/trailer.mp4">
+                    <source src="media/trailer.ogg">
+                </video>
+                <div id="barra">
+                    <div id="progreso"></div>
+                </div>
+            </div>
+            <nav>
+                <input type="button" id="reiniciar" value="reiniciar">
+                <input type="button" id="retrasar" value="&laquo;">
+                <input type="button" id="play" value="&#9658;">
+                <input type="button" id="adelantar" value="&raquo;">
+                <input type="button" id="silenciar" value="silenciar">
+                <label>Volumen</label>
+                <input type="button" id="menosVolumen" value="-">
+                <input type="button" id="masVolumen" value="+">
+            </nav> 
+        </main>
+
+        <footer>
+            <b>HTML y CSS</b>
+            <p>Curso Diseño de interfaces web - 2DAW</p>
+        </footer>
+    </div>
+</body>
+</html>
