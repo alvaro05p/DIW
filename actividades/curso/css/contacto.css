@@ -28,30 +28,9 @@ nav{
     display: flex;
     justify-content:space-around;
     background: linear-gradient(to right, rgb(218, 155, 40), rgb(238, 216, 93));
+    
     padding: 20px;
     color: white;
-}
-
-main nav{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    padding: 20px;
-    color: white;
-    background: none;
-}
-
-main nav input{
-    background-color: orangered;
-    padding: 10px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-
-}
-
-main nav input:hover{
-    box-shadow: 5px 10px 10px;
-    color: black;
 }
 
 nav a{
@@ -136,7 +115,7 @@ article header {
   
 /* Chincheta del primer artículo */
 article:nth-of-type(1) .chincheta {
-    left: 186px;
+    left: 178px;
 }
 
 /* Chincheta del segundo artículo */
@@ -290,8 +269,118 @@ nav a:hover{
     text-shadow: 0px 0px 5px #ff7e42;
 }
 
-nav a{
+main p{
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/* Contenedor del formulario */
+#contenedorFormulario {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    width: 600px;
+    padding: 20px 50px;
+    background-color: rgba(200, 200, 200, 0.7);
+    text-align: left;
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Título del formulario */
+#contenedorFormulario h1 {
+    position: absolute;
+    top: -16px;
+    left: 490px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Aguafina Script', cursive;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+    padding: 0 10px;
+    margin: 0;
+}
+
+/* Estilos comunes para los campos del formulario */
+form input,
+form textarea {
+    display: inline-block;
+    width: 330px;
+    height: 32px;
+    margin-bottom: 10px;
+    padding: 1px 45px 1px 4px;
+    border: 1px solid #e5e5e5;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3),
+                inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in;
+}
+
+/* Campos de nombre y correo */
+form input:focus {
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+/* Fondo de los campos de texto */
+form input[name="nombre"] {
+    background-image: url('../img/icon-nombre.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+form input[name="correo"] {
+    background-image: url('../img/icon-correo.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+/* Campo del mensaje */
+form textarea {
+    width: 90%;
+    height: 150px;
+    background-image: url('../img/icon-mensaje.png');
+    background-repeat: no-repeat;
+    background-position: 10px top;
+}
+
+form textarea:focus {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+/* Asterisco para los campos obligatorios */
+form input[required] + label::after,
+form textarea[required] + label::after {
+    content: '*';
+    color: red;
+}
+
+/* Botón enviar */
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #434343;
+    background: linear-gradient(to bottom, #5e5e5e, #2a2a2a);
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0px 1px 1px #353535;
+}
+
+form button:hover {
+    background: linear-gradient(to top, #5e5e5e, #2a2a2a);
+}
+
+/* Validación de campos con imágenes de validación */
+input:valid {
+    background-image: url('../img/valid.png'), url('../img/icon-nombre.png');
+    background-position: right 10px center, 10px center;
+}
+
+input:invalid {
+    background-image: url('../img/invalid.png'), url('../img/icon-nombre.png');
+    background-position: right 10px center, 10px center;
 }

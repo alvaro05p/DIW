@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reproductor.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Luckiest+Guy&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
     <div id="page">
@@ -23,7 +23,7 @@
         <nav>
             <div>
                 <img src="imgs/book.png" alt="Libro">
-                <a href="index.html"><h3>Contenidos</h3></a>
+                <a href=""><h3>Contenidos</h3></a>
             </div>
             <ul class="menu">
                 <li class="desplegable">
@@ -44,28 +44,34 @@
         </nav>
 
         <main>
-            <div id="reproductor">
-                <video id="medio" width="720" height="400"> <source src="imgs/209424_tiny.mp4">
-                    <source src="imgs/209424_tiny.mp4">
-                </video>
-                <div id="barra">
-                    <div id="progreso"></div>
-                </div>
+            <div id="contenedorFormulario">
+                <h1>Contáctenos</h1>
+                <form>
+                    <!-- Campo para el nombre -->
+                    <input type="text" name="nombre" placeholder="Escriba su nombre" list="nombres" required>
+                    <label></label> <!-- Asterisco para los campos obligatorios -->
+                    <datalist id="nombres">
+                        <option value="alex">
+                        <option value="juan">
+                        <option value="ana">
+                        <option value="pedro">
+                    </datalist>
+    
+                    <!-- Campo para el email -->
+                    <input type="email" name="correo" placeholder="Escriba su email" required>
+                    <label></label> <!-- Asterisco para los campos obligatorios -->
+    
+                    <!-- Campo para el mensaje -->
+                    <textarea name="mensaje" placeholder="Su mensaje..." required></textarea>
+    
+                    <!-- Botón enviar -->
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <nav>
-                <input type="button" id="reiniciar" value="reiniciar">
-                <input type="button" id="retrasar" value="&laquo;">
-                <input type="button" id="play" value="&#9658;">
-                <input type="button" id="adelantar" value="&raquo;">
-                <input type="button" id="silenciar" value="silenciar">
-                <label>Volumen</label>
-                <input type="button" id="menosVolumen" value="-">
-                <input type="button" id="masVolumen" value="+">
-            </nav> 
         </main>
 
         <footer>
-            <b>HTML y CSS</b>
+            <p><b>HTML y CSS</b></p>
             <p>Curso Diseño de interfaces web - 2DAW</p>
         </footer>
     </div>

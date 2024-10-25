@@ -115,7 +115,7 @@ article header {
   
 /* Chincheta del primer artículo */
 article:nth-of-type(1) .chincheta {
-    left: 186px;
+    left: 178px;
 }
 
 /* Chincheta del segundo artículo */
@@ -267,5 +267,11 @@ nav a{
 
 nav a:hover{
     text-shadow: 0px 0px 5px #ff7e42;
+}
+
+main p{
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
   
