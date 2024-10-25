@@ -42,9 +42,8 @@ main{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-color: white ;
+    background-image: url(/imgs/fondoForm.jpg);
     padding: 10px;
-    
 }
 
 main p{
@@ -64,7 +63,7 @@ article {
     margin-bottom: 14%;
     padding: 3px;
     margin: 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     max-width: 30%;
     flex: 1 1 30%; 
     border-radius: 80px;
@@ -277,6 +276,7 @@ main p{
 
 /* Contenedor del formulario */
 #contenedorFormulario {
+    opacity: 85%;
     position: relative;
     display: inline-block;
     margin: 50px;
@@ -290,8 +290,8 @@ main p{
 /* Título del formulario */
 #contenedorFormulario h1 {
     position: absolute;
-    top: -16px;
-    left: 490px;
+    top: -25px;
+    left: 400px;
     background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Aguafina Script', cursive;
     font-style: italic;
@@ -305,6 +305,7 @@ main p{
 /* Estilos comunes para los campos del formulario */
 form input,
 form textarea {
+    opacity: 100%;
     display: inline-block;
     width: 330px;
     height: 32px;
@@ -360,7 +361,7 @@ form textarea[required] + label::after {
 /* Botón enviar */
 form button {
     display: block;
-    width: 100%;
+    width: 15%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #434343;
