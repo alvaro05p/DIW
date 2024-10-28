@@ -22,3 +22,9 @@ input{
 #short{
     width: 50px;
 }
+
+input[type="submit"]{
+    background-color: gray;
+    padding: 15px;
+    border: 3px solid rgb(53, 53, 53);
+}
