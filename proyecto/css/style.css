@@ -92,6 +92,11 @@ article h2 {
     padding: 15px;
 }
 
+article p{
+    width: 40%;
+    font-size: larger;
+}
+
 section {
     display: flex;
     flex-direction: column;
