@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
     background-color: rgb(47, 47, 47);
     color: white;
@@ -7,46 +8,24 @@ body {
     font-style: normal;
 }
 
+/* Header */
 header {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-items: center;
     padding: 15px;
+    height: 20%;
 }
 
-main{
-    width: 100%;
-    margin-right: 10%;
-}
-
-@media (min-width: 1200px) {
-    header {
-        background-color: black;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        justify-items: center;
-        padding: 10px;
-    }
-
-    header svg{
-        display: none;
-    }
-
-    #search{
-        max-width: 15%;
-    }
-}
-
-header svg{
+header svg {
     padding: 10px;
 }
 
 header img {
     max-height: 40px;
+    max-width: 40px;
     background-color: white;
     border-radius: 30px;
     padding: 5px;
@@ -66,23 +45,47 @@ header li {
 header a {
     text-decoration: none;
     color: white;
-    padding: 6px;
+    width: 40px;
 }
 
-header a:hover {
+header img:hover {
     color: black;
     background-color: white;
     border-radius: 5px;
 }
 
+/* Header en Pantallas Grandes */
+@media (min-width: 1200px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+    }
+
+    header svg {
+        display: none;
+    }
+
+    #search {
+        max-width: 15%;
+    }
+}
+
+/* Main */
+main {
+    width: 100%;
+    margin-right: 10%;
+    height: 60%;
+}
+
+/* Article */
 article {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     width: 100%;
-    margin-top: 2%;
-    margin-bottom: 7.5%;
+    margin: 2% auto 7.5% auto;
 }
 
 article h2 {
@@ -92,11 +95,12 @@ article h2 {
     padding: 15px;
 }
 
-article p{
+article p {
     width: 40%;
     font-size: larger;
 }
 
+/* Section */
 section {
     display: flex;
     flex-direction: column;
@@ -105,14 +109,14 @@ section {
 }
 
 .image-container {
-    position: relative; /* Necesario para que el overlay funcione correctamente */
+    position: relative;
 }
 
 section img {
     width: 400px;
     height: 275px;
     border-radius: 10px;
-    display: block; /* Asegura que la imagen no tenga espacios */
+    display: block;
 }
 
 .overlay {
@@ -121,21 +125,22 @@ section img {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0; /* Oculto inicialmente */
-    transition: opacity 0.5s ease; /* Transición suave */
-    text-align: center; /* Texto centrado */
-    border-radius: 10px; /* Para coincidir con las esquinas de la imagen */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .image-container:hover .overlay {
-    opacity: 1; /* Mostrar el texto al hacer hover */
+    opacity: 1;
 }
 
+/* Section en Pantallas Grandes */
 @media (min-width: 1200px) {
     section {
         display: grid;
@@ -144,6 +149,7 @@ section img {
     }
 }
 
+/* Footer */
 footer {
     background-color: black;
     width: 100%;
@@ -152,14 +158,7 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
-}
-
-@media (min-width: 1200px) {
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+    height: 20%;
 }
 
 footer ul {
@@ -185,6 +184,26 @@ footer a:hover {
     border-radius: 5px;
 }
 
+/* Footer en Pantallas Grandes */
+@media (min-width: 1200px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Nosotros Main */
+.nosotros-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 7.5%;
+}
+
 .nosotros-main p {
     margin: 5% auto;
     max-width: 800px;
@@ -193,42 +212,32 @@ footer a:hover {
     line-height: 1.6;
 }
 
-.nosotros-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 7.5%;
-}
-
-#search{
+/* Input Search */
+#search {
     border-radius: 10px;
     padding: 3px;
     max-width: 40%;
 }
 
-aside{
+/* Aside */
+aside {
     display: none;
 }
 
 @media (min-width: 1200px) {
-    
-    #aside{
+    #aside {
         display: flex;
     }
 
     aside {
-        background-color: black; /* Match the header background */
+        background-color: black;
         padding: 10px;
         display: block;
-        
     }
 
     aside ul {
         list-style: none;
-        padding: 0; /* Remove default padding */
+        padding: 0;
     }
 
     aside li {
@@ -246,5 +255,32 @@ aside{
         background-color: white;
         border-radius: 5px;
     }
-
 }
+
+/* Inscribirse Form */
+.inscribirse-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inscribirse-form input {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.inscribirse-form input[type="submit"] {
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.nosotros-img {
+    border-width: 10px 10px 10px 10px;
+    border-style: solid;
+    border-image-source: url("../img/border-image.jpg");
+    border-image-slice: 120; /* Ajusta este valor */
+    border-image-repeat: stretch;
+}
+
+
+
