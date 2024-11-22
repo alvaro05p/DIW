@@ -20,6 +20,22 @@ header {
     color: white;
 }
 
+#logo{
+    animation: rotar 5s infinite;
+}
+
+@keyframes rotar{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 header h1{
     margin-left: 10px;
 }
@@ -274,4 +290,56 @@ main p{
     font-weight: 400;
     font-style: normal;
 }
-  
+
+
+
+/* Animación para mueveChincheta1 */
+@keyframes mueveChincheta1 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 199px;
+    }
+}
+
+/* Animación para mueveChincheta2 */
+@keyframes mueveChincheta2 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 120px;
+    }
+}
+
+/* Animación para mueveChincheta3 */
+@keyframes mueveChincheta3 {
+    from {
+        left: 0;
+    }
+    to {
+        left: 30px;
+    }
+}
+
+/* Animación para animArticle1 */
+@keyframes animArticle1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Animación para animArticle3 */
+@keyframes animArticle3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(2deg);
+    }
+}
+
