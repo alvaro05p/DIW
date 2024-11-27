@@ -72,7 +72,7 @@ main p{
 
 article {
     border: solid;
-    border-image: url('/imgs/movil.png');
+    border-image: url('/curso/imgs/movil.png');
     border-width: 50px 10px 50px 10px;
     border-image-slice: 50 10 50 10;
     background-color: white;
