@@ -1,0 +1,34 @@
+.bloques{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bloque{
+    padding: 150px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+@media(max-width: 800px){
+
+    .bloques{
+        display: block;
+        width: auto;
+        
+    }
+    
+    .bloque{
+        height: 400px;
+        background-color: green;
+        border: 1px solid black;
+        margin: 20px;
+    }
+    
+
+}
+
+
+
+
+
