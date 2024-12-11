@@ -165,7 +165,7 @@ nav {
 .menu {
     list-style: none;
     padding: 0;
-    margin: 0;
+
 }
 
 .menu > li {
@@ -362,13 +362,19 @@ main p{
     }
 }
 
+@media(min-width: 475px) {
+
+    #icono{
+        display: none;
+    }
+}
 @media(max-width: 475px) {
     nav ul {
         display: none; 
     }
     nav a {
         display: block; 
-        background-image: url('imgs/menu.png');
+        background-image: url('/imgs/menu.png');
         background-repeat: no-repeat;
         background-position: center 10px;
         width: 80px;
@@ -381,6 +387,8 @@ main p{
     nav .desplegado {
         display: block;
     }
+
 }
+
 
 
