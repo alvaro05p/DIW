@@ -385,3 +385,36 @@ input:invalid {
     background-image: url('../img/invalid.png'), url('../img/icon-nombre.png');
     background-position: right 10px center, 10px center;
 }
+
+@media (max-width: 1024px) {
+    #contenedorFormulario {
+        margin: 4%; 
+        width: 58%; 
+        padding: 2% 4%; 
+    }
+
+    #contenedorFormulario h1 {
+        position: static; 
+        padding: 0% 1%; 
+        margin: 2% 0%; 
+    }
+
+    #contenedorFormulario input:not([type="submit"]) {
+        height: 5%; 
+        width: 55%; 
+    }
+
+   
+    #contenedorFormulario input:not([type="submit"]):focus {
+        width: 61%; 
+    }
+
+    
+    #contenedorFormulario textarea {
+        width: 75%; 
+    }
+
+    #contenedorFormulario input[type="submit"] {
+        display: block;
+    }
+}

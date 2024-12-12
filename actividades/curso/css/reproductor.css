@@ -304,3 +304,36 @@ nav a{
     font-weight: 400;
     font-style: normal;
 }
+
+#reproductor {
+    display: inline-block; 
+    width: 95%; 
+    max-width: 720px; 
+    margin: 20px auto; 
+}
+
+video {
+    width: 95%; 
+    max-width: 720px; 
+    height: auto; 
+    margin: 5px; 
+}
+
+
+#reproductor nav {
+    display: inline-block; 
+    float: none; 
+    vertical-align: top;
+}
+
+#barra {
+    width: 95%; 
+    max-width: 705px; 
+    padding: 0; 
+}
+
+@media (max-width: 970px) {
+    nav{
+        display: inline-block; 
+    }
+}
