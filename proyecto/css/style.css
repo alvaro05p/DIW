@@ -317,7 +317,7 @@ aside {
 .flip:hover .overlay{
     opacity: 0;
 }
-
+/* Keyframes para crear animaciones */
 @keyframes giro {
 
     from{
@@ -375,4 +375,27 @@ footer a{
 .icon-example img {
     width: 50px;
     height: 50px;
+}
+
+video{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+input {
+    background: linear-gradient(135deg, #ffbbab, #f2dece); 
+    border: none; 
+    border-radius: 10px;
+    padding: 12px 20px; 
+    font-size: 16px; 
+    color: white; 
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: all 0.3s ease-in-out; 
+}
+
+input[type="submit"] {
+    background: radial-gradient(#c0543b, #f2dece); 
 }
