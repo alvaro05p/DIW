@@ -18,24 +18,41 @@
         <h1>KDD Paiporta</h1>
         <ul>
             <li><a href="quedadas.html">Quedadas</a></li>
-            <li><a href="inscribirse.html">Inscribirse</a></li>
+            <li><a href="inscribirse.html" style="background-color: white; color: black; padding: 5px; border-radius: 5px;">Inscribirse</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
     </header>
     <article>
         
         <h1>Inscribirse</h1>
-        <form action="GET" class="inscribirse-form">
+        <form action="inscrito.html" class="inscribirse-form">
             <label for="nombre">Nombre:</label>
-            <input type="text">
-            <label for="nombre">Apellidos:</label>
-            <input type="text">
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
             <label for="tlf">Teléfono:</label>
-            <input type="tel">
+            <input type="tel" id="tlf" name="tlf" required pattern="^\d{10}$" placeholder="634231594">
+            
             <label for="email">Email:</label>
-            <input type="email">
-            <input type="submit">
+            <input type="email" id="email" name="email" required>
+            
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" required>
+            
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" required min="1" max="100">
+            
+            <label for="range">Conocimientos de mecanica:</label>
+            <input type="range" id="range" name="range" min="1" max="10" required>
+            
+            <label for="color">Color de la tarjeta de socio:</label>
+            <input type="color" id="color" name="color">
+            
+            <input type="submit" id="enviarForm">
         </form>
+        
         <video src="/img/drift.mp4" autoplay controls poster="/img/drift-thumbnail.jpg" style="border-radius: 10px; box-shadow: 5px 5px 15px rgba(0,0,0,0.5); width: 100%; max-width: 800px;">
             Tu navegador no soporta este video.
         </video>
