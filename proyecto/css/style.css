@@ -42,6 +42,7 @@ header img {
     background-color: white;
     border-radius: 30px;
     padding: 5px;
+    margin-left: 100%;
 }
 
 header ul {
@@ -418,7 +419,7 @@ video{
 /* Invalid Inputs */
 input:invalid {
     border: 2px solid red;
-    background-color: #fdd;
+    background-color: white;
 }
 
 /* Valid Inputs */
@@ -451,3 +452,4 @@ input:focus {
         flex-direction: column;
     }
 }
+
