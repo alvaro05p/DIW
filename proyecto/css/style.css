@@ -313,7 +313,7 @@ aside {
 .nosotros-img {
     border-width: 10px 10px 10px 10px;
     border-style: solid;
-    border-image-source: url("../img/border-image.jpg");
+    border-image-source: url("../img/border-image.webp");
     border-image-slice: 120; 
     border-image-repeat: stretch;
     width: 75%;
