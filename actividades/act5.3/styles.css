@@ -1,0 +1,13 @@
+body{
+    padding: 10px;
+}
+
+h4{
+    margin: 20px;
+    padding: 5px;
+    border-top: 1px solid gray;
+}
+
+button{
+    margin: 5px;
+}
