@@ -6,6 +6,11 @@
     <title>Ordenar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+
+        body{
+            text-align: center;
+        }
+
         .header{
             background-color: rgb(72, 216, 72);
             height: 50px;
@@ -14,11 +19,27 @@
         .azul{
             background-color: rgb(124, 158, 253);
             height: 100px;
+            
+        }
+
+        .gris{
+            background-color: rgb(146, 146, 146);
+            height: 100px;
+            
+        }
+
+        .cyan{
+            background-color: cyan;
+            height: 100px;
+        }
+
+        .naranja{
+            background-color: rgb(255, 94, 0);
+            height: 100px;
         }
 
         div{
             border: 5px solid white;
-
         }
 
     </style>
@@ -27,23 +48,54 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col header">
-                Header
+            <div class="col header">Header</div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-sm-3 azul">
+                1
+            </div>
+            <div class="col-6 col-sm-3 azul">
+                2
+            </div>
+            <div class="col-6 col-sm-3 azul">
+                3
+            </div>
+            <div class="col-6 col-sm-3 azul">
+                4
+            </div>
+        </div>
+        <div class="rom">
+            <div class="col d-none d-sm-block d-md-none cyan">
+                Tablet
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 azul offset-md-3 col-sm-3">
-                1
+            <div class="col-6 col-sm-3 gris">
+                a
             </div>
-            <div class="col-md-3 azul col-sm-3 col-sm-3">
-                2
+            <div class="col-6 col-sm-3 gris">
+                b
             </div>
-            <div class="col-md-3 azul offset-md-1 col-sm-3">
-                3
+            <div class="col-6 col-sm-3 gris">
+                c
             </div>
-            <div class="col-md-3 azul offset-md-3 col-sm-3">
-                4
+            <div class="col-6 col-sm-3 gris">
+                d
             </div>
+        </div>
+        <div class="row">
+            <div class="col cyan d-sm-none">Movile</div>
+        </div>
+        <div class="row">
+            <div class="col d-none d-md-block cyan">Desktop</div>
+        </div>
+        <div class="row">
+            <div class="col naranja order-2 col-md-3">:D</div>
+            <div class="col naranja d-none d-sm-block col-md-3 offset-md-3">:(</div>
+        </div>
+        <div class="row">
+            <div class="col header">Footer</div>
         </div>
     </div>
 </body>
