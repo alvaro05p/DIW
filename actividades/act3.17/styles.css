@@ -58,3 +58,12 @@ footer .col{
     color: white;
     padding: 10px;
 }
+
+@media(max-width: 768px){
+    nav{
+        grid-template-columns: repeat(3,1fr);
+    }
+    footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
