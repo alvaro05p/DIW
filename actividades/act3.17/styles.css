@@ -1,0 +1,60 @@
+nav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: rgb(247, 247, 239);
+    padding: 10px;
+    gap: 10px;
+}
+
+nav .col{
+    background-color: gray;
+    padding: 10px;
+}
+
+
+header{
+    background-color: rgb(46, 46, 46);
+    color: rgb(172, 172, 172);
+    padding: 10px;
+}
+
+.banner-a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.article-a{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.aside{
+    background-color: gray;
+    color: rgb(53, 53, 53);
+    padding: 10px;
+}
+
+.main{
+    background-color: rgb(184, 184, 184);
+    padding: 10px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(172, 172, 172);
+    gap: 10px;
+    padding: 10px;
+}
+
+.banner-b{
+    background-color: rgb(105, 105, 105);
+    padding: 10px;
+}
+
+footer .col{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 10px;
+}
