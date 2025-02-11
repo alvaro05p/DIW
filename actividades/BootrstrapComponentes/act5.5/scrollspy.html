@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body><nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="pagination.html">Pagination</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="popover.html">Popover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progress.html">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scrollspy.html">Scrollspy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">First heading</h4>
+    <p>Praesent eleifend congue volutpat. In tempus ornare venenatis. In vitae mi libero. Sed et ex et odio bibendum posuere sit amet vel orci. Maecenas eu orci ac ligula accumsan aliquam. Donec commodo massa eu ante tempor vehicula. Fusce pulvinar fermentum vehicula. Vestibulum ornare massa id scelerisque auctor. Ut id congue metus, nec facilisis lectus. Duis rhoncus finibus mattis.</p>
+    <h4 id="scrollspyHeading2">Second heading</h4>
+    <p>Sed pulvinar, quam at faucibus ultricies, augue neque aliquam sapien, quis porta ex erat eget enim. Ut suscipit commodo mi, non commodo quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vel nisl non mi semper rutrum vel a purus. Vivamus ex tellus, tempus sed pretium ac, dictum ut elit. Maecenas id convallis sapien. Pellentesque sed imperdiet arcu. Nunc facilisis diam tempor tempor finibus. Curabitur quis turpis ullamcorper, finibus purus eu, pretium ex. Aenean sit amet libero dolor.</p>
+    <h4 id="scrollspyHeading3">Third heading</h4>
+    <p>Pellentesque porta risus a blandit laoreet. Donec arcu urna, consequat non dolor id, porta pellentesque nulla. Cras ut dictum diam, ut cursus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc eros turpis, placerat quis facilisis vitae, placerat a odio. Cras sed fermentum augue, at condimentum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vel cursus felis. Proin gravida pharetra imperdiet. Mauris vitae tortor sapien. Sed ornare, justo non luctus semper, velit dolor vehicula ex, fermentum efficitur felis nulla nec dolor. Praesent ac sodales augue, sed facilisis sem. Duis eleifend at quam eget posuere. Quisque eleifend, dolor sit amet fringilla interdum, ipsum augue vehicula orci, vel scelerisque libero erat eu purus. Etiam blandit ipsum vitae euismod porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p>Vestibulum imperdiet dolor ut massa tincidunt, sed mattis ante venenatis. Aenean iaculis fermentum magna, ut viverra mauris consequat a. In hac habitasse platea dictumst. Praesent varius turpis vel velit finibus, quis tincidunt neque dictum. Nulla vitae turpis id libero ornare ornare. Duis posuere tortor ultricies ullamcorper rhoncus. Praesent scelerisque vitae velit at tincidunt. Aenean eu dolor in lectus elementum fermentum. Fusce convallis erat nec est eleifend, eu tincidunt velit luctus.</p>
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <p>Donec pretium congue risus non condimentum. Donec semper, metus non hendrerit semper, ex sapien rhoncus nibh, at vulputate urna magna vitae erat. Nam rhoncus eget turpis a placerat. Proin dignissim varius nisi et egestas. Etiam non arcu dui. Nulla facilisi. Vivamus ut lobortis dolor, vulputate condimentum quam. Curabitur tempus mauris tempus, auctor arcu vitae, egestas nibh. Fusce in suscipit mi. Etiam tempus ex eu odio cursus, id ullamcorper nulla interdum. Ut et volutpat tellus. Duis sodales facilisis posuere. Sed id posuere eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
