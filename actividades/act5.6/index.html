@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda de Bicicletas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Logo" width="40"> Tienda de Bicicletas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bicicletas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Componentes</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sillines</a></li>
+                            <li><a class="dropdown-item" href="#">Cascos</a></li>
+                            <li><a class="dropdown-item" href="#">Tijas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#quienesSomos">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#referencias">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/orbea.jpg" class="d-block w-100" alt="Bicicleta">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/accesorios.jpg" class="d-block w-100" alt="Accesorio">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/componentes.jpg" class="d-block w-100" alt="Componente">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/orbea.jpg" class="card-img-top" alt="Bicicleta">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicicletas</h5>
+                        <p class="card-text">Explora nuestra gama de bicicletas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/accesorios.jpg" class="card-img-top" alt="Accesorio">
+                    <div class="card-body">
+                        <h5 class="card-title">Accesorios</h5>
+                        <p class="card-text">Encuentra los mejores accesorios.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/componentes.jpg" class="card-img-top" alt="Componente">
+                    <div class="card-body">
+                        <h5 class="card-title">Componentes</h5>
+                        <p class="card-text">Los mejores componentes para tu bicicleta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div id="quienesSomos" class="collapse">
+            <div class="card card-body">Nuestra tienda se especializa en bicicletas y accesorios de alta calidad.</div>
+        </div>
+        <div id="referencias" class="collapse">
+            <div class="card card-body">Clientes satisfechos en todo el mundo avalan nuestra calidad.</div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mensaje</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        Tienda de bicis bootstrap Álvaro Pardo 2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
