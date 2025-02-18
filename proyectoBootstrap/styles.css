@@ -1,0 +1,18 @@
+
+/* Asegura que el contenido tenga margen superior y el footer esté siempre al final */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px; /* Ajuste para navbar fijo */
+    background-color: black;
+}
+.content {
+    flex: 1;
+}
+
+.logo{
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
