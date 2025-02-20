@@ -1,0 +1,55 @@
+// Variables
+$primary-color: #FF8C00; // Orange color for first title
+$secondary-color: #2F7676; // Teal color for second title
+$text-color: #000000;
+$font-primary: 'Times New Roman', serif;
+$font-size-base: 16px;
+$font-size-title: 20px;
+
+body {
+  font-family: $font-primary;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Title styling
+h1 {
+  &:not(.second-title) {
+    color: $primary-color;
+    text-align: center;
+  }
+  
+  &.second-title {
+    color: $secondary-color;
+  }
+  
+  font: {
+    size: $font-size-title;
+    weight: normal;
+  }
+}
+
+// Quote styling
+.quote {
+  margin: {
+    top: 10px;
+    bottom: 20px;
+  }
+  
+  &.spanish {
+    font: {
+      style: italic;
+    }
+  }
+}
+
+// Paragraph styling
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  
+  &::first-line {
+    font-style: italic;
+  }
+}
