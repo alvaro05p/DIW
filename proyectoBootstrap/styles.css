@@ -5,9 +5,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding-top: 70px; /* Ajuste para navbar fijo */
-    background-color: black;
+    background-color: black !important;
     font-family: 'Orbitron', sans-serif; /* Opcional: fuente más moderna */
-    text-shadow: 2px 2px 4px rgba(0, 255, 157, 0.3);
 }
 .content {
     flex: 1;
@@ -26,6 +25,7 @@ body {
 .card {
     background-color: #1e1e1e; /* Color oscuro para tarjetas */
     border: 1px solid #343a40; /* Borde sutil */
+    max-width: 500px;
 }
 .card img {
     opacity: 0.9;
@@ -120,93 +120,5 @@ body {
 }
 
 
-    
-.card {
-    background-color: #1e1e1e; /* Color oscuro para tarjetas */
-    border: 1px solid #343a40; /* Borde sutil */
-}
-.card img {
-    opacity: 0.9;
-    transition: opacity 0.3s;
-}
-.card img:hover {
-    opacity: 1;
-}
-   
-.neon-text {
-    text-shadow: 0 0 10px #5100e9, 0 0 20px #5100e9, 0 0 30px #5100e9;
-    animation: neon-pulse 1.5s infinite alternate;
-}
 
-.epic-card {
-    position: relative;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    transition: transform 0.5s, box-shadow 0.3s;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
-}
 
-.epic-card:hover {
-    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
-    box-shadow: 0 0 30px #5100e9;
-}
-
-.card-image-wrapper {
-    overflow: hidden;
-    position: relative;
-}
-
-.card-img-top {
-    transition: transform 0.5s;
-}
-
-.epic-card:hover .card-img-top {
-    transform: scale(1.1) rotate(1deg);
-}
-
-.btn-glow {
-    background: #5100e9;
-    color: #1a1a1a;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.btn-glow:hover {
-    background: #5100e9;
-    box-shadow: 0 0 15px #5100e9;
-}
-
-.neon-title {
-    color: white;
-    text-shadow: 0 0 8px #5100e9;
-}
-
-.card-glare {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, 
-        transparent, 
-        rgba(255, 255, 255, 0.1), 
-        transparent);
-    transition: 0.5s;
-}
-
-.epic-card:hover .card-glare {
-    left: 100%;
-}
-
-@keyframes neon-pulse {
-    from {
-        text-shadow: 0 0 10px #5100e9, 0 0 20px #5100e9;
-    }
-    to {
-        text-shadow: 0 0 20px #5100e9, 0 0 30px #5100e9, 0 0 40px #5100e9;
-    }
-}
