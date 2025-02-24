@@ -23,6 +23,14 @@ body {
     color: #ffffff; /* Texto claro */
 }
 
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #ccc;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -135,6 +143,7 @@ body {
 
 footer{
     padding-top: 10px;
+    background-color: #222;
 }
 
 .navbar{
@@ -143,6 +152,7 @@ footer{
 
 
 :root {
+    --white: #ffffff;
     --primary-color: #343a40;
     --dark-bg: #121212;
     --dark-secondary: #1e1e1e;
@@ -309,8 +319,9 @@ h2 {
 .audio {
     width: 100%;
     margin-top: 2rem;
-    background-color: var(--primary-lighter);
+    background-color: var(--white);
     border-radius: 5px;
+    opacity: 30%;
 }
 
 /* Estilos responsivos */
