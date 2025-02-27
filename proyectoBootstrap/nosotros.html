@@ -1,17 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros - Encuentros de Coches Valencia</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kdd Paiporta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a href="index.html"><img src="./img/logo.png" alt="logo" class="logo" style="height: 40px;"></a>
+            <a href="index.html"><img src="/img/logo.png" alt="logo" class="logo" style="height: 40px;"></a>
             <a class="navbar-brand" href="index.html">Kdd Paiporta</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -35,97 +34,60 @@
             </div>
         </div>
     </nav>
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="display-4 mb-4">Pasión por los Coches en Valencia</h1>
-            <p class="lead">Uniendo a entusiastas del motor desde 2020</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Nuestra Historia</h2>
-                    <p>KddPaiporta nació de la pasión compartida por los automóviles y la necesidad de crear un espacio donde los entusiastas pudieran reunirse, compartir experiencias y mostrar sus vehículos en un ambiente amigable y profesional.</p>
-                    <p>Organizamos encuentros mensuales, rutas por la Comunidad Valenciana y eventos especiales que reúnen a cientos de aficionados del mundo del motor.</p>
-                    <button class="primary-btn mt-3">Únete a Nosotros</button>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/historia.webp" alt="Encuentro de coches" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section py-5 my-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4 mb-4">
-                    <div class="counter">+500</div>
-                    <p>Miembros Activos</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="counter">48</div>
-                    <p>Eventos Realizados</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="counter">4</div>
-                    <p>Rutas Mensuales</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">¿Por qué unirse a nosotros?</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="card-body text-center">
-                            <h4 class="card-title mb-3">Comunidad Activa</h4>
-                            <p class="card-text">Forma parte de una comunidad apasionada que comparte tus mismos intereses y valores en el mundo del motor.</p>
-                        </div>
+    
+    <!-- Agregar iconos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Contenido principal -->
+    <div class="container content mt-4">
+        <h2 class="text-center mb-4">Ahora en Valencia</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-light border-secondary">
+                    <img src="img/old.webp" class="card-img-top" alt="Nosotros">
+                    <div class="card-body">
+                        <h5 class="card-title">Nosotros</h5>
+                        <p class="card-text">Descripción breve sobre el equipo y nuestras actividades.</p>
+                        <a href="nosotros.html" class="btn btn-outline-light">Más información</a>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="card-body text-center">
-                            <h4 class="card-title mb-3">Eventos Exclusivos</h4>
-                            <p class="card-text">Accede a eventos únicos, desde encuentros locales hasta grandes concentraciones y rutas organizadas.</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-light border-secondary">
+                    <img src="img/lowrider.webp" class="card-img-top" alt="Eventos">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                        <p class="card-text">Consulta las próximas quedadas y participa con nosotros.</p>
+                        <a href="quedadas.html" class="btn btn-outline-light">Ver eventos</a>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card feature-card h-100 p-4">
-                        <div class="card-body text-center">
-                            <h4 class="card-title mb-3">Networking</h4>
-                            <p class="card-text">Conecta con otros entusiastas, comparte experiencias y aprende de expertos en el sector automotriz.</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-light border-secondary">
+                    <img src="img/bikes.webp" class="card-img-top" alt="Únete">
+                    <div class="card-body">
+                        <h5 class="card-title">Únete</h5>
+                        <p class="card-text">Forma parte de nuestra comunidad y disfruta del mundo del motor.</p>
+                        <a href="inscribirse.html" class="btn btn-outline-light">Inscribirse</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="py-3">
+   <!-- Footer -->
+   <footer class="py-3">
     <div class="container text-center">
-        <p>Álvaro Pardo Peralta - KKD Paiporta ©</p>
-        <ul class="list-inline">
+      <p>Álvaro Pardo Peralta - KKD Paiporta ©</p>
+      <ul class="list-inline">
         <li class="list-inline-item"><a href="quedadas.html">Quedadas</a></li>
         <li class="list-inline-item"><a href="inscribirse.html">Inscribirse</a></li>
         <li class="list-inline-item"><a href="nosotros.html">Nosotros</a></li>
         <li class="list-inline-item"><a href="diw.html">DIW</a></li>
-        </ul>
+      </ul>
     </div>
-    </footer>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

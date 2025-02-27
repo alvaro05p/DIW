@@ -1,59 +1,106 @@
-
-/* Asegura que el contenido tenga margen superior y el footer esté siempre al final */
+/* Base styles and layout */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 70px; /* Ajuste para navbar fijo */
-    background-color: black !important;
-    font-family: 'Orbitron', sans-serif; /* Opcional: fuente más moderna */
-}
-.content {
-    flex: 1;
+    padding-top: 70px; /* Space for fixed navbar */
+    background-color: #121212 !important;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin: 0;
 }
 
-.logo{
+.content {
+    flex: 1;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Logo styles */
+.logo {
     background-color: white;
     padding: 5px;
     border-radius: 30px;
+    height: 40px;
+    transition: transform 0.3s ease;
 }
 
-body {
-    background-color: #121212; /* Fondo oscuro */
-    color: #ffffff; /* Texto claro */
+.logo:hover {
+    transform: scale(1.1);
 }
 
-a{
+/* Link styles */
+a {
     color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-a:hover{
+a:hover {
     color: #ccc;
+    text-decoration: none;
 }
 
+/* Card styles */
 .card {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #343a40; /* Para que coincidan con el tema oscuro */
+    background-color: #343a40;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .card-body {
-    flex-grow: 1;  /* Expande el contenido para que todas las tarjetas sean del mismo tamaño */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text, .card-title {
+    color: white;
 }
 
 .card img {
     width: 100%;
-    height: 200px;  /* Puedes cambiar esta altura a lo que necesites */
-    object-fit: cover;  /* Evita que la imagen se deforme */
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
 .card img:hover {
-    opacity: 1;
+    opacity: 0.8;
 }
 
-.estrecho{
-    width: 60%;
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Container width control */
+.estrecho {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Video background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay {
@@ -62,40 +109,39 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* Oscurece el video */
-    z-index: 0;
-}
-
-.overlay{
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 
-.container{
-    display: block;
-    justify-content: center;
+/* Form styles */
+.form-inscripcion {
+    background-color: rgba(52, 58, 64, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
 }
 
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
+.form-inscripcion input {
+    margin-bottom: 15px;
+    background-color: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
-/* Ajusta el video al tamaño de la pantalla */
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.form-inscripcion input:focus {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
-.form-inscripcion input{
-    margin: 15px;
+.form-label {
+    margin-bottom: 0.5rem;
+    color: white;
 }
 
+/* Neon card effect */
 .neon-card {
     background: linear-gradient(145deg, #1e1e1e, #252525);
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -120,16 +166,26 @@ a:hover{
     100% { left: 100%; }
 }
 
-.card-hover:hover {
-    transform: translateY(-10px);
-    transition: transform 0.5s ease;
-}
-
+/* Audio player */
 .audio-player {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.audio {
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.audio:hover {
+    opacity: 1;
 }
 
 .progress {
@@ -137,27 +193,30 @@ a:hover{
     height: 5px;
 }
 
-.audio{
-    height: 20px;
-}
-
-footer{
-    padding-top: 10px;
+/* Footer styles */
+footer {
+    padding: 15px 0;
     background-color: #222;
+    margin-top: auto;
+    width: 100%;
 }
 
-.navbar{
+footer ul {
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+/* Navbar adjustments */
+.navbar {
     border: 1px solid #343a40 !important;
+    padding: 10px 15px;
 }
 
-
-:root {
-    --white: #ffffff;
-    --primary-color: #343a40;
-    --dark-bg: #121212;
-    --dark-secondary: #1e1e1e;
+.navbar-brand {
+    font-weight: bold;
 }
 
+/* Hero section */
 .hero-section {
     background-image: url(/img/nosotros.webp);
     background-size: cover;
@@ -165,167 +224,127 @@ footer{
     height: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo con opacidad */
+    position: relative;
     margin-top: 0;
+    padding: 20px;
 }
 
-.hero-section h1 {
-    opacity: 1; /* Mantén la opacidad al 100% */
-}
-
-
-.feature-card {
-    background-color: var(--dark-secondary);
-    border: none;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-}
-
-.primary-btn {
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    color: white;
-}
-
-.primary-btn:hover {
-    background-color: #343a40;
-    transform: scale(1.05);
-    color: white;
-}
-
-.stats-section {
-    background-color: var(--dark-secondary);
-}
-
-.counter {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.card-text, .card-title{
-    color: white;
-}
-
-
-/* Variables para el esquema monocromático */
-:root {
-    --primary-color: #343434;
-    --primary-light: #505050;
-    --primary-lighter: #616161;
-    --primary-dark: #000000;
-    --primary-darker: #333333;
-    --text-light: #ecf0f1;
-}
-
-/* Estilos generales */
-body {
-    background-color: var(--primary-color);
-    color: var(--text-light);
-}
-
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: fixed;
+.hero-section::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+    z-index: 0;
 }
 
-/* Contenedor estrecho */
-.estrecho {
-    max-width: 600px;
+.hero-section .container {
+    position: relative;
+    z-index: 1;
 }
 
-/* Estilos del formulario */
-.form-inscripcion {
-    background-color: var(--primary-lighter);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(80, 80, 80, 0.3);
+.hero-section h1 {
+    opacity: 1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.form-label {
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
+/* Feature cards */
+.feature-card {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    height: 100%;
 }
 
-.form-control {
-    background-color: var(--primary-light);
-    border: 1px solid var(--primary-darker);
-    color: var(--text-light);
-    padding: 0.8rem;
-    margin-bottom: 1rem;
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.form-control:focus {
-    background-color: var(--primary-light);
-    border-color: var(--text-light);
-    color: var(--text-light);
-    box-shadow: 0 0 0 0.2rem rgba(236, 240, 241, 0.25);
+/* Buttons */
+.primary-btn {
+    background-color: #343a40;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    color: white;
+    display: inline-block;
 }
 
-.form-control::placeholder {
-    color: rgba(236, 240, 241, 0.6);
+.primary-btn:hover {
+    background-color: #495057;
+    transform: scale(1.05);
+    color: white;
 }
 
-/* Botón personalizado */
 .btn-dark {
-    background-color: var(--primary-darker);
-    border-color: var(--text-light);
-    color: var(--text-light);
-    padding: 0.8rem 2rem;
+    background-color: #343a40;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
 }
 
 .btn-dark:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--text-light);
+    background-color: #495057;
     transform: translateY(-2px);
 }
 
-/* Estilos para el título */
-h2 {
-    color: var(--text-light);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+/* Stats section */
+.stats-section {
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
 }
 
-/* Estilos para el reproductor de audio */
-.audio {
-    width: 100%;
-    margin-top: 2rem;
-    background-color: var(--white);
-    border-radius: 5px;
-    opacity: 30%;
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0055;
+    margin-bottom: 10px;
 }
 
-/* Estilos responsivos */
+/* Quedadas page - vertical scroll for desktop */
+.vertical-scroll .card {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.vertical-scroll .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile carousel adjustments */
+#carouselMobile .carousel-item {
+    padding: 10px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .hero-section {
+        height: 300px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .estrecho {
+        width: 95%;
+    }
+    
     .form-inscripcion {
         padding: 1.5rem;
     }
@@ -333,4 +352,72 @@ h2 {
     .btn-dark {
         width: 100%;
     }
+    
+    .counter {
+        font-size: 2rem;
+    }
+    
+    .card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 250px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .estrecho {
+        width: 100%;
+    }
+    
+    .form-inscripcion input {
+        margin-bottom: 10px;
+    }
+}
+
+/* Center all section content */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .row {
+    width: 100%;
+}
+
+/* Ensure container spacing is consistent */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Center form elements better */
+.form-inscripcion .mb-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inscripcion input {
+    width: 100%;
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
 }
