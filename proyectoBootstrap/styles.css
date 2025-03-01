@@ -220,7 +220,7 @@ footer ul {
 
 /* Hero section */
 .hero-section {
-    background-image: url(/img/nosotros.webp);
+    background-image: url(./img/nosotros.webp);
     background-size: cover;
     background-position: center;
     height: 400px;
